@@ -1,5 +1,7 @@
 function minDate(dates) {
   //write you code here
+	if (!dates.length) return null; // Handle empty array
+  return dates.reduce((min, current) => (current < min ? current : min));
 }
 
 // Do not change the code
